@@ -1,3 +1,4 @@
+@charset "UTF-8";
 * {
   margin: 0;
   padding: 0;
@@ -30,6 +31,39 @@ p {
   font-weight: normal;
   font-style: italic;
 }
+@font-face {
+  font-family: "Caveat";
+  src: url(../assets\f ontsÊveat-Regular.ttf);
+  font-weight: normal;
+  font-style: normal;
+}
+nav {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin-left: 50px;
+  margin-right: 50px;
+}
+
+.siteLogo {
+  width: 167px;
+  height: 55px;
+}
+
+nav a {
+  margin-left: 55px;
+  font-family: "Caveat";
+  font-size: 25px;
+  text-decoration: none;
+  color: #000;
+}
+
+.login {
+  background-color: #FFD972;
+  padding: 10px 45px 10px 45px;
+  border-radius: 26px;
+}
+
 footer {
   display: flex;
   justify-content: space-between;
