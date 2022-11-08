@@ -18,9 +18,44 @@ p {
   margin-bottom: 16px;
 }
 
-footer img {
+@font-face {
+  font-family: "Lato";
+  src: url(../assets\f ontsLatoLato-Regular.ttf);
+  font-weight: normal;
+  font-style: normal;
+}
+@font-face {
+  font-family: "Lato";
+  src: url(../assets/fonts/Lato/Lato-Italic.ttf);
+  font-weight: normal;
+  font-style: italic;
+}
+footer {
+  display: flex;
+  justify-content: space-between;
+}
+
+.copy {
+  margin-left: 40px;
+}
+
+.footerIcon {
   width: 19px;
   height: 19px;
+  margin-right: 40px;
+}
+
+footer p {
+  font-family: "Lato";
+  font-style: italic;
+  font-size: 15px;
+  margin-right: 20px;
+}
+
+.footLinks {
+  display: flex;
+  align-items: center;
+  justify-content: space-evenly;
 }
 
 /*# sourceMappingURL=styles.css.map */

@@ -1,4 +1,29 @@
-footer img {
+footer {
+    display: flex;
+    justify-content: space-between;
+    
+}
+
+.copy {
+    margin-left: 40px;
+}
+
+.footerIcon {
     width: 19px;
     height: 19px;
+    margin-right: 40px;
+}
+
+footer p {
+  font-family: "Lato";
+  font-style: italic;  
+  font-size: 15px;
+  margin-right: 20px; 
+}
+
+.footLinks {
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+    
 }
