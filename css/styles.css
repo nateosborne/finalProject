@@ -1,4 +1,3 @@
-@charset "UTF-8";
 * {
   margin: 0;
   padding: 0;
@@ -32,8 +31,14 @@ p {
   font-style: italic;
 }
 @font-face {
+  font-family: "Lato";
+  src: url(../assets/fonts/Lato/Lato-Black.ttf);
+  font-weight: 800;
+  font-style: normal;
+}
+@font-face {
   font-family: "Caveat";
-  src: url(../assets\f ontsÊveat-Regular.ttf);
+  src: url(../assets/fonts/Caveat-Regular.ttf);
   font-weight: normal;
   font-style: normal;
 }
@@ -90,6 +95,98 @@ footer p {
   display: flex;
   align-items: center;
   justify-content: space-evenly;
+}
+
+.recipeDesc {
+  margin-top: 149px;
+  display: flex;
+  justify-content: center;
+  margin-right: 134px;
+}
+
+.desc {
+  max-width: 455px;
+  margin-left: 45px;
+}
+
+.recImage {
+  width: 468px;
+  height: 421px;
+  object-fit: cover;
+  overflow: hidden;
+  margin-left: 12px;
+}
+
+.desc p {
+  font-size: 20px;
+  font-family: "Caveat";
+}
+
+.desc h1 {
+  font-family: "Lato";
+  font-weight: 800;
+  letter-spacing: 3px;
+}
+
+.desc h2 {
+  font-family: "Lato";
+  font-weight: 800;
+  letter-spacing: 3px;
+}
+
+h1 {
+  display: flex;
+  justify-content: flex-end;
+  margin-top: 65px;
+  font-family: "Lato";
+  font-weight: 800;
+  letter-spacing: 3px;
+  writing-mode: vertical-lr;
+  transform: scale(-1);
+}
+
+.recProcess {
+  display: flex;
+  align-items: center;
+  justify-content: space-evenly;
+  flex-direction: column;
+  margin-top: 60px;
+}
+.recProcess ul {
+  list-style: none;
+}
+.recProcess li {
+  font-size: 20px;
+  font-family: "Caveat";
+}
+.recProcess ol li {
+  margin-left: 16px;
+}
+.recProcess h2 {
+  font-family: "Lato";
+  font-weight: 800;
+  letter-spacing: 3px;
+  width: 300px;
+}
+
+.ingredients {
+  width: 1055px;
+}
+
+.instructions {
+  width: 1055px;
+  margin-top: 60px;
+  margin-bottom: 93px;
+}
+.instructions button {
+  width: 128px;
+  height: 42px;
+  font-family: "Caveat";
+  font-size: 20px;
+  background-color: #FFD972;
+  border-style: none;
+  border-radius: 26px;
+  margin-top: 60px;
 }
 
 /*# sourceMappingURL=styles.css.map */
