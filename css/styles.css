@@ -53,7 +53,7 @@ nav {
 }
 
 .siteLogo {
-  width: 217px;
+  width: 240px;
   height: 55px;
 }
 
@@ -79,6 +79,8 @@ nav a:hover {
 footer {
   display: flex;
   justify-content: space-between;
+  position: relative;
+  bottom: 170px;
 }
 
 .copy {
@@ -92,10 +94,11 @@ footer {
 }
 
 footer p {
-  font-family: "Lato";
-  font-style: italic;
+  font-family: "LatoI";
   font-size: 15px;
   margin-right: 20px;
+  color: black;
+  text-decoration: none;
 }
 
 .footLinks {
