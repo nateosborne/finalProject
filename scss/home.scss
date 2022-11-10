@@ -1,0 +1,76 @@
+.homepage {
+  background-image: linear-gradient(
+      rgba(242, 92, 84, 0.5),
+      rgba(242, 92, 84, 0.5)
+    ),
+    url(../assets/images/hero.jpg);
+  height: 800px;
+  width: 100%;
+  background-size: cover;
+  background-repeat: no-repeat;
+  position: relative;
+  top: -100px;
+  z-index: -1;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.circle1 {
+  height: 357px;
+  width: 357px;
+  border-radius: 100%;
+  background-color: #ffd972;
+  box-shadow: 0px 10px 6px rgba(0, 0, 0, 0.2);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.c1text {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  flex-direction: column;
+}
+
+.c1text-head {
+  font-family: Caveat;
+  font-size: 24px;
+}
+
+.c1text-desc {
+  font-family: Lato;
+  font-size: 13px;
+  width: 164px;
+}
+
+.circle2 {
+  height: 167px;
+  width: 167px;
+  background-color: #fcbcb8;
+  box-shadow: 0px 10px 6px rgba(0, 0, 0, 0.2);
+  border-radius: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: relative;
+  bottom: 150px;
+  right: 100px;
+  z-index: -1;
+}
+
+.c2text {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  flex-direction: column;
+}
+
+.c2text-desc {
+  font-family: Lato;
+  font-size: 10px;
+  width: 105px;
+}
