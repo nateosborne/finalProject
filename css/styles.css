@@ -4,7 +4,8 @@
   box-sizing: border-box;
 }
 
-html, body {
+html,
+body {
   height: 100%;
 }
 
@@ -25,13 +26,13 @@ p {
   font-style: normal;
 }
 @font-face {
-  font-family: "Lato";
+  font-family: "LatoI";
   src: url(../assets/fonts/Lato/Lato-Italic.ttf);
   font-weight: normal;
   font-style: italic;
 }
 @font-face {
-  font-family: "Lato";
+  font-family: "LatoB";
   src: url(../assets/fonts/Lato/Lato-Black.ttf);
   font-weight: 800;
   font-style: normal;
@@ -48,10 +49,11 @@ nav {
   justify-content: space-between;
   margin-left: 50px;
   margin-right: 50px;
+  margin-top: 38px;
 }
 
 .siteLogo {
-  width: 167px;
+  width: 240px;
   height: 55px;
 }
 
@@ -63,8 +65,13 @@ nav a {
   color: #000;
 }
 
+nav a:hover {
+  text-decoration: underline;
+  text-underline-offset: 8px;
+}
+
 .login {
-  background-color: #FFD972;
+  background-color: #ffd972;
   padding: 10px 45px 10px 45px;
   border-radius: 26px;
 }
@@ -72,6 +79,8 @@ nav a {
 footer {
   display: flex;
   justify-content: space-between;
+  position: relative;
+  bottom: 170px;
 }
 
 .copy {
@@ -85,10 +94,11 @@ footer {
 }
 
 footer p {
-  font-family: "Lato";
-  font-style: italic;
+  font-family: "LatoI";
   font-size: 15px;
   margin-right: 20px;
+  color: black;
+  text-decoration: none;
 }
 
 .footLinks {
@@ -365,6 +375,79 @@ footer p {
     border-radius: 26px;
     margin-top: 44px;
   }
+}
+
+.homepage {
+  background-image: linear-gradient(rgba(242, 92, 84, 0.5), rgba(242, 92, 84, 0.5)), url(../assets/images/hero.jpg);
+  height: 800px;
+  width: 100%;
+  background-size: cover;
+  background-repeat: no-repeat;
+  position: relative;
+  top: -100px;
+  z-index: -1;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.circle1 {
+  height: 357px;
+  width: 357px;
+  border-radius: 100%;
+  background-color: #ffd972;
+  box-shadow: 0px 10px 6px rgba(0, 0, 0, 0.2);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.c1text {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  flex-direction: column;
+}
+
+.c1text-head {
+  font-family: Caveat;
+  font-size: 24px;
+}
+
+.c1text-desc {
+  font-family: Lato;
+  font-size: 13px;
+  width: 164px;
+}
+
+.circle2 {
+  height: 167px;
+  width: 167px;
+  background-color: #fcbcb8;
+  box-shadow: 0px 10px 6px rgba(0, 0, 0, 0.2);
+  border-radius: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: relative;
+  bottom: 150px;
+  right: 100px;
+  z-index: -1;
+}
+
+.c2text {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  flex-direction: column;
+}
+
+.c2text-desc {
+  font-family: Lato;
+  font-size: 10px;
+  width: 105px;
 }
 
 /*# sourceMappingURL=styles.css.map */
