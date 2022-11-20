@@ -621,6 +621,7 @@ footer p {
   flex-direction: column;
 }
 .createYourRecipe h1 {
+  margin-top: 132px;
   font-family: "Caveat";
   font-size: 25px;
   font-weight: normal;
@@ -630,6 +631,7 @@ footer p {
   font-size: 20px;
   font-family: "Lato";
   letter-spacing: 0.1em;
+  margin-bottom: 36px;
 }
 .createYourRecipe input {
   height: 36px;
