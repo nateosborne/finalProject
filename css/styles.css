@@ -330,7 +330,7 @@ footer p {
     letter-spacing: 3px;
     font-size: 20px;
   }
-  h1 {
+  .recipeDesc h1 {
     display: flex;
     justify-content: flex-end;
     margin-top: 55px;
@@ -615,94 +615,271 @@ footer p {
   margin-right: 17.6px;
 }
 
-.createYourRecipe {
-  display: flex;
-  align-items: center;
-  flex-direction: column;
+@media screen and (min-width: 1025px) {
+  .createYourRecipe {
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+  }
+  .createYourRecipe h1 {
+    margin-top: 132px;
+    font-family: "Caveat";
+    font-size: 25px;
+    font-weight: normal;
+    margin-bottom: 78px;
+  }
+  .createYourRecipe h2 {
+    font-size: 20px;
+    font-family: "Lato";
+    letter-spacing: 0.1em;
+    margin-bottom: 36px;
+  }
+  .createYourRecipe input {
+    height: 36px;
+    width: 974px;
+    margin-bottom: 86px;
+    border-top-style: hidden;
+    border-right-style: hidden;
+    border-left-style: hidden;
+    border-width: 3px;
+    font-size: 20px;
+    font-family: "Lato";
+    letter-spacing: 0.1em;
+    background: transparent;
+  }
+  .createYourRecipe .crtRecBtn {
+    width: 422px;
+    height: 52px;
+    background-color: #EFA7A7;
+    border-style: none;
+    border-radius: 26px;
+    font-family: "Caveat";
+    font-size: 17px;
+    margin-bottom: 109px;
+    box-shadow: 0px 10px 6px rgba(0, 0, 0, 0.2);
+  }
+  .cyrDesc {
+    max-width: 974px;
+    margin-bottom: 130px;
+  }
+  .cyrDesc .attachBtn {
+    float: right;
+    margin-top: -130px;
+    width: 110px;
+    height: 36.2px;
+    background-color: #EFA7A7;
+    border-style: none;
+    border-radius: 26px;
+    font-family: "Caveat";
+    font-size: 17px;
+    box-shadow: 0px 10px 6px rgba(0, 0, 0, 0.2);
+  }
+  .cyrIngrdnt {
+    max-width: 974px;
+    margin-bottom: 130px;
+  }
+  .cyrIngrdnt .addBtn {
+    width: 38px;
+    height: 38px;
+    color: #fff;
+    background-color: #EFA7A7;
+    border-style: none;
+    border-radius: 50px;
+    float: right;
+    margin-top: -132px;
+  }
+  .cyrInstr {
+    max-width: 974px;
+    margin-bottom: 109px;
+  }
+  .cyrInstr .addBtn {
+    width: 38px;
+    height: 38px;
+    color: #fff;
+    background-color: #EFA7A7;
+    border-style: none;
+    border-radius: 50px;
+    float: right;
+    margin-top: -132px;
+  }
 }
-.createYourRecipe h1 {
-  margin-top: 132px;
-  font-family: "Caveat";
-  font-size: 25px;
-  font-weight: normal;
-  margin-bottom: 78px;
+@media screen and (max-width: 1024px) {
+  .createYourRecipe {
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+  }
+  .createYourRecipe h1 {
+    margin-top: 113px;
+    font-family: "Caveat";
+    font-size: 25px;
+    margin-bottom: 65px;
+    letter-spacing: 0.1em;
+    text-align: center;
+  }
+  .createYourRecipe h2 {
+    font-size: 20px;
+    font-family: "Lato";
+    letter-spacing: 0.1em;
+    margin-bottom: 36px;
+  }
+  .createYourRecipe input {
+    height: 28px;
+    width: 558px;
+    margin-bottom: 68.5px;
+    border-top-style: hidden;
+    border-right-style: hidden;
+    border-left-style: hidden;
+    border-width: 3px;
+    font-size: 16px;
+    font-family: "Lato";
+    letter-spacing: 0.1em;
+    background: transparent;
+  }
+  .createYourRecipe .crtRecBtn {
+    width: 354px;
+    height: 52px;
+    background-color: #EFA7A7;
+    border-style: none;
+    border-radius: 26px;
+    font-family: "Caveat";
+    font-size: 17px;
+    margin-bottom: 109px;
+    box-shadow: 0px 10px 6px rgba(0, 0, 0, 0.2);
+  }
+  .cyrDesc {
+    max-width: 558px;
+    margin-bottom: 98px;
+  }
+  .cyrDesc .attachBtn {
+    float: right;
+    margin-top: -111px;
+    width: 120.5px;
+    height: 36.2px;
+    background-color: #EFA7A7;
+    border-style: none;
+    border-radius: 26px;
+    font-family: "Caveat";
+    font-size: 16px;
+    box-shadow: 0px 10px 6px rgba(0, 0, 0, 0.2);
+  }
+  .cyrIngrdnt {
+    max-width: 558px;
+    margin-bottom: 98px;
+  }
+  .cyrIngrdnt .addBtn {
+    width: 38px;
+    height: 38px;
+    color: #fff;
+    background-color: #EFA7A7;
+    border-style: none;
+    border-radius: 50px;
+    float: right;
+    margin-top: -113px;
+  }
+  .cyrInstr {
+    max-width: 558px;
+    margin-bottom: 100px;
+  }
+  .cyrInstr .addBtn {
+    width: 38px;
+    height: 38px;
+    color: #fff;
+    background-color: #EFA7A7;
+    border-style: none;
+    border-radius: 50px;
+    float: right;
+    margin-top: -113px;
+  }
 }
-.createYourRecipe h2 {
-  font-size: 20px;
-  font-family: "Lato";
-  letter-spacing: 0.1em;
-  margin-bottom: 36px;
-}
-.createYourRecipe input {
-  height: 36px;
-  width: 974px;
-  margin-bottom: 86px;
-  border-top-style: hidden;
-  border-right-style: hidden;
-  border-left-style: hidden;
-  border-width: 3px;
-  font-size: 20px;
-  font-family: "Lato";
-  letter-spacing: 0.1em;
-  background: transparent;
-}
-.createYourRecipe .crtRecBtn {
-  width: 422px;
-  height: 52px;
-  background-color: #EFA7A7;
-  border-style: none;
-  border-radius: 26px;
-  font-family: "Caveat";
-  font-size: 17px;
-  margin-bottom: 109px;
-  box-shadow: 0px 10px 6px rgba(0, 0, 0, 0.2);
-}
-
-.cyrDesc {
-  max-width: 974px;
-  margin-bottom: 130px;
-}
-.cyrDesc .attachBtn {
-  float: right;
-  margin-top: -130px;
-  width: 110px;
-  height: 36.2px;
-  background-color: #EFA7A7;
-  border-style: none;
-  border-radius: 26px;
-  font-family: "Caveat";
-  font-size: 17px;
-  box-shadow: 0px 10px 6px rgba(0, 0, 0, 0.2);
-}
-
-.cyrIngrdnt {
-  max-width: 974px;
-  margin-bottom: 130px;
-}
-.cyrIngrdnt .addBtn {
-  width: 38px;
-  height: 38px;
-  color: #fff;
-  background-color: #EFA7A7;
-  border-style: none;
-  border-radius: 50px;
-  float: right;
-  margin-top: -132px;
-}
-
-.cyrInstr {
-  max-width: 974px;
-  margin-bottom: 109px;
-}
-.cyrInstr .addBtn {
-  width: 38px;
-  height: 38px;
-  color: #fff;
-  background-color: #EFA7A7;
-  border-style: none;
-  border-radius: 50px;
-  float: right;
-  margin-top: -132px;
+@media screen and (max-width: 599px) {
+  .createYourRecipe {
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+  }
+  .createYourRecipe .cyrDesc h1 {
+    margin-top: 98.2px;
+    font-family: "Caveat";
+    font-size: 20px;
+    font-weight: normal;
+    margin-bottom: 58.6px;
+    letter-spacing: 0.1em;
+  }
+  .createYourRecipe h2 {
+    font-size: 20px;
+    font-family: "Lato";
+    letter-spacing: 0.1em;
+    margin-bottom: 47px;
+  }
+  .createYourRecipe input {
+    height: 23px;
+    width: 283.54px;
+    margin-bottom: 49.5px;
+    border-top-style: hidden;
+    border-right-style: hidden;
+    border-left-style: hidden;
+    border-width: 3px;
+    font-size: 12px;
+    font-family: "Lato";
+    letter-spacing: 0.1em;
+    background: transparent;
+  }
+  .createYourRecipe .crtRecBtn {
+    width: 283px;
+    height: 52px;
+    background-color: #EFA7A7;
+    border-style: none;
+    border-radius: 26px;
+    font-family: "Caveat";
+    font-size: 20px;
+    margin-bottom: 90px;
+    box-shadow: 0px 10px 6px rgba(0, 0, 0, 0.2);
+  }
+  .cyrDesc {
+    max-width: 283.27px;
+    margin-bottom: 58px;
+  }
+  .cyrDesc .attachBtn {
+    float: right;
+    margin-top: -89px;
+    width: 92px;
+    height: 33.2px;
+    background-color: #EFA7A7;
+    border-style: none;
+    border-radius: 26px;
+    font-family: "Caveat";
+    font-size: 17px;
+    box-shadow: 0px 10px 6px rgba(0, 0, 0, 0.2);
+  }
+  .cyrIngrdnt {
+    max-width: 283.27px;
+    margin-bottom: 58px;
+  }
+  .cyrIngrdnt .addBtn {
+    width: 38px;
+    height: 38px;
+    color: #fff;
+    background-color: #EFA7A7;
+    border-style: none;
+    border-radius: 50px;
+    float: right;
+    margin-top: -94px;
+  }
+  .cyrInstr {
+    max-width: 283.27px;
+    margin-bottom: 58px;
+  }
+  .cyrInstr .addBtn {
+    width: 38px;
+    height: 38px;
+    color: #fff;
+    background-color: #EFA7A7;
+    border-style: none;
+    border-radius: 50px;
+    float: right;
+    margin-top: -94px;
+  }
 }
 
 /*# sourceMappingURL=styles.css.map */
