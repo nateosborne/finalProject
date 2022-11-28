@@ -72,3 +72,15 @@ input {
   font-size: 12px;
   font-family: LatoI;
 }
+
+@media screen and (max-width: 800px) {
+  .loginhome {
+    height: 1200px;
+  }
+
+  .loginpage {
+    display: grid;
+    justify-content: center;
+    height: 857px;
+  }
+}

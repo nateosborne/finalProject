@@ -19,7 +19,7 @@
 .recipeheader {
   font-size: 25px;
   font-family: CaveatB;
-  margin-top: 80px;
+  margin-bottom: 50px;
 }
 
 .recipescontainer {
@@ -27,7 +27,7 @@
   flex-direction: column;
   align-items: center;
   justify-content: space-between;
-  height: 746px;
+  height: 600px;
   width: 1100px;
 }
 
@@ -164,4 +164,27 @@
   width: 24.46px;
   background-image: url(../assets/icons/servings.svg);
   margin-right: 17.6px;
+}
+
+@media screen and (max-width: 1100px) {
+  .recipeshome {
+    height: 1600px;
+  }
+
+  .recipescontainer {
+    display: block;
+    margin-bottom: 500px;
+  }
+
+  .reciperow1 {
+    display: grid;
+    justify-content: center;
+    height: 566px;
+  }
+
+  .reciperow2 {
+    display: grid;
+    justify-content: center;
+    height: 566px;
+  }
 }

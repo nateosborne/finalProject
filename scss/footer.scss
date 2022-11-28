@@ -28,3 +28,9 @@ footer p {
   align-items: center;
   justify-content: space-evenly;
 }
+
+@media screen and (max-width: 970px) {
+  footer p {
+    font-size: 10px;
+  }
+}

@@ -114,6 +114,11 @@ footer p {
   justify-content: space-evenly;
 }
 
+@media screen and (max-width: 970px) {
+  footer p {
+    font-size: 10px;
+  }
+}
 @media screen and (min-width: 1025px) {
   .recipeDesc {
     margin-top: 149px;
@@ -473,7 +478,7 @@ footer p {
 .recipeheader {
   font-size: 25px;
   font-family: CaveatB;
-  margin-top: 80px;
+  margin-bottom: 50px;
 }
 
 .recipescontainer {
@@ -481,7 +486,7 @@ footer p {
   flex-direction: column;
   align-items: center;
   justify-content: space-between;
-  height: 746px;
+  height: 600px;
   width: 1100px;
 }
 
@@ -617,6 +622,25 @@ footer p {
   margin-right: 17.6px;
 }
 
+@media screen and (max-width: 1100px) {
+  .recipeshome {
+    height: 1600px;
+  }
+  .recipescontainer {
+    display: block;
+    margin-bottom: 500px;
+  }
+  .reciperow1 {
+    display: grid;
+    justify-content: center;
+    height: 566px;
+  }
+  .reciperow2 {
+    display: grid;
+    justify-content: center;
+    height: 566px;
+  }
+}
 @media screen and (min-width: 1025px) {
   .createYourRecipe {
     display: flex;
@@ -956,6 +980,17 @@ input {
 .dont {
   font-size: 12px;
   font-family: LatoI;
+}
+
+@media screen and (max-width: 800px) {
+  .loginhome {
+    height: 1200px;
+  }
+  .loginpage {
+    display: grid;
+    justify-content: center;
+    height: 857px;
+  }
 }
 
 /*# sourceMappingURL=styles.css.map */
