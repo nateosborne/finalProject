@@ -2,17 +2,20 @@ footer {
   display: flex;
   justify-content: space-between;
   position: relative;
-  bottom: 140px;
+  width: 100%;
+  bottom: 40px;
 }
 
 .copy {
   margin-left: 40px;
+  //background-color: chocolate;
 }
 
 .footerIcon {
   width: 19px;
   height: 19px;
   margin-right: 40px;
+  //background-color: aquamarine;
 }
 
 footer p {
@@ -24,9 +27,11 @@ footer p {
 }
 
 .footLinks {
+  //background-color: chartreuse;
   display: flex;
   align-items: center;
   justify-content: space-evenly;
+  margin-left: -130px;
 }
 
 @media screen and (max-width: 970px) {

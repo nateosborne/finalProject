@@ -53,9 +53,14 @@ nav {
   display: flex;
   align-items: center;
   justify-content: space-between;
-  margin-left: 50px;
-  margin-right: 50px;
+  padding-left: 50px;
+  padding-right: 50px;
   margin-top: 38px;
+  background-color: transparent;
+  position: fixed;
+  top: 0;
+  width: 100%;
+  z-index: 1;
 }
 
 .siteLogo {
@@ -87,7 +92,8 @@ footer {
   display: flex;
   justify-content: space-between;
   position: relative;
-  bottom: 140px;
+  width: 100%;
+  bottom: 40px;
 }
 
 .copy {
@@ -112,6 +118,7 @@ footer p {
   display: flex;
   align-items: center;
   justify-content: space-evenly;
+  margin-left: -130px;
 }
 
 @media screen and (max-width: 970px) {
@@ -395,8 +402,6 @@ footer p {
   background-size: cover;
   background-repeat: no-repeat;
   position: relative;
-  top: -100px;
-  z-index: -1;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -914,8 +919,6 @@ footer p {
   background-size: cover;
   background-repeat: no-repeat;
   position: relative;
-  top: -100px;
-  z-index: -1;
   display: flex;
   justify-content: center;
   align-items: center;

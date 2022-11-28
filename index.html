@@ -12,37 +12,14 @@
       <img class="siteLogo" src="assets/icons/logo.svg" alt="" />
       <div class="navLinks">
         <a href="index.html">Home</a>
-        <a href="../pages/recipes.html">Browse</a>
-        <a href="../pages/createYourRecipe.html">Create Recipe</a>
-        <a class="login" href="../pages/login.html">Login</a>
+        <a href="#recipes">Browse</a>
+        <a href="#createYourRecipe">Create Recipe</a>
+        <a class="login" href="#login">Login</a>
       </div>
     </nav>
 
-    <div class="homepage">
-      <div class="circle1">
-        <div class="c1text">
-          <p class="c1text-head">The Jungle Cook</p>
-          <p class="c1text-desc">
-            The home to various recipes of your choice. Add your own recipe
-            today and fill the world with joy!
-          </p>
-        </div>
-      </div>
-      <div class="circle2">
-        <div class="c2text">
-          <p class="c2text-desc">
-            Want to be a Jungle Cook? Go ahead and the kitchen is yours!
-          </p>
-        </div>
-      </div>
-    </div>
-
-    <div>
-      <a href="pages/viewRecipe.html"><p>dev purposes(view recipe)</p></a>
-      <a href="pages/createYourRecipe.html"
-        ><p>dev purposes(create your recipe)</p></a
-      >
-    </div>
+    <!-- PAGE INJECTION -->
+    <div id="app"></div>
 
     <footer>
       <p class="copy">Copyright © 2019 The Jungle Cook</p>
@@ -58,5 +35,9 @@
         <img class="footerIcon" src="assets/icons/instagram.svg" alt="" />
       </div>
     </footer>
+
+    <script src="lib/jquery-3.6.1.min.js"></script>
+    <script src="app/model.js" type="module"></script>
+    <script src="app/app.js" type="module"></script>
   </body>
 </html>

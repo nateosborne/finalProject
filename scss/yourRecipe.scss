@@ -1,0 +1,109 @@
+.yourRecipe {
+    background-image: linear-gradient(
+      rgba(167, 232, 189, 0.5),
+      rgba(167, 232, 189, 0.5)
+    ),
+    url(../assets/images/recipe-hero.jpg);
+    min-height: 1000px;
+    width: 100%;
+    background-size:cover;
+    background-repeat: no-repeat;
+    padding-left: 107px;
+    padding-top: 137px; 
+}
+.yrRecipeContainer {
+    .viewRecBtn {
+        position: absolute;
+        margin-left: 90px;
+        margin-top: 110px;
+        
+    }
+}
+
+.yourRecipe button {
+    width: 127px;
+    height: 42px;
+    background-color: #FFD972;
+    border-style: none;
+    border-radius: 26px;
+    font-family: "Caveat";
+    font-size: 17px;
+    box-shadow: 0px 10px 6px rgba(0, 0, 0, 0.2);
+}
+
+.yrRecipeHead h1 {
+    font-size: 25px;
+    font-family: CaveatB;
+    margin-top: 80px;
+    margin-bottom: 50px;
+}
+.yrRecipeContainer {
+    display: flex;
+    
+    
+    .recImg {
+        width: 300px;
+        height: 263px;
+        object-fit: cover;
+        border-radius: 24px;
+    }
+    .yrRecDesc {
+        width: 224px;
+        height: 263px;
+        background-color: #fff;
+        border-radius: 24px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        flex-direction: column;
+    }
+    
+    
+}
+
+.time {
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+    
+}
+.time img {
+    height: 24.46px;
+    width: 87px;
+}
+
+.servings {
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+
+    img {
+        height: 24.46px;
+        width: 87px;
+    }
+}
+
+.yrRecDesc {
+    h2 {
+        font-size: 15px;
+        font-family: LatoB;
+        text-decoration-line: underline;
+        text-decoration-thickness: 3px;
+    }
+    p {
+        font-size: 9px;
+        font-family: Lato;
+        width: 138px; 
+    }
+}
+.changesBtns {
+    //display: block;
+    width: 300px;
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+    margin-top: 15px;
+    
+}
+
+
