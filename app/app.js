@@ -15,6 +15,15 @@ function initURLListener() {
 function initSubmitListener() {
   $("#loginbutton").on("click", function (e) {
     console.log("submit");
+    let em = $("#email").val();
+    let pw = $("#pw").val();
+    console.log(`${em}${pw}`);
+    if (em == "") {
+      alert("Please enter your email");
+    }
+    if (pw == "") {
+      alert("Please enter your password");
+    }
   });
 }
 
