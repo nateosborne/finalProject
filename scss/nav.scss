@@ -1,38 +1,96 @@
-nav {
-  display: flex;
-  align-items: center;
-  justify-content: space-between;
-  padding-left: 50px;
-  padding-right: 50px;
-  margin-top: 38px;
-  background-color: transparent;
-  position: fixed;
-  top: 0;
-  width: 100%;
-  z-index: +1;
+//Desktop
+@media screen and (min-width: 1025px) {
+  nav {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding-left: 50px;
+    padding-right: 50px;
+    margin-top: 38px;
+    background-color: transparent;
+    position: fixed;
+    top: 0;
+    width: 100%;
+    z-index: +1;
+  }
+  
+  .siteLogo {
+    width: 240px;
+    height: 55px;
+  }
+  
+  nav a {
+    margin-left: 55px;
+    font-family: "Caveat";
+    font-size: 25px;
+    text-decoration: none;
+    color: #000;
+  }
+  
+  nav a:hover {
+    text-decoration: underline;
+    text-underline-offset: 8px;
+  }
+  
+  .login {
+    background-color: #ffd972;
+    padding: 10px 45px 10px 45px;
+    border-radius: 26px;
+    box-shadow: 0px 10px 6px rgba(0, 0, 0, 0.2);
+  }
+  
+  .mobileMenuIcon {
+    display: none;
+  }
 }
 
-.siteLogo {
-  width: 240px;
-  height: 55px;
+@media screen and (max-width: 1024px) {
+  nav {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding-left: 50px;
+    padding-right: 50px;
+    margin-top: 38px;
+    background-color: transparent;
+    position: fixed;
+    top: 0;
+    width: 100%;
+    z-index: +1;
+  }
+  
+  .siteLogo {
+    width: 240px;
+    height: 55px;
+  }
+  
+  nav a {
+    margin-left: 55px;
+    font-family: "Caveat";
+    font-size: 25px;
+    text-decoration: none;
+    color: #000;
+  }
+  
+  nav a:hover {
+    text-decoration: underline;
+    text-underline-offset: 8px;
+  }
+  
+  .login {
+    background-color: #ffd972;
+    padding: 10px 45px 10px 45px;
+    border-radius: 26px;
+    box-shadow: 0px 10px 6px rgba(0, 0, 0, 0.2);
+  }
+  
+  .navLinks {
+    display: none;
+  } 
+
+  .mobileMenuIcon {
+    width: 31.33px;
+  }
 }
 
-nav a {
-  margin-left: 55px;
-  font-family: "Caveat";
-  font-size: 25px;
-  text-decoration: none;
-  color: #000;
-}
 
-nav a:hover {
-  text-decoration: underline;
-  text-underline-offset: 8px;
-}
-
-.login {
-  background-color: #ffd972;
-  padding: 10px 45px 10px 45px;
-  border-radius: 26px;
-  box-shadow: 0px 10px 6px rgba(0, 0, 0, 0.2);
-}

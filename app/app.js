@@ -30,3 +30,5 @@ function initSubmitListener() {
 $(document).ready(function () {
   initURLListener();
 });
+
+

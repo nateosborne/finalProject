@@ -49,81 +49,196 @@ p {
   font-weight: normal;
   font-style: normal;
 }
-nav {
-  display: flex;
-  align-items: center;
-  justify-content: space-between;
-  padding-left: 50px;
-  padding-right: 50px;
-  margin-top: 38px;
-  background-color: transparent;
-  position: fixed;
-  top: 0;
-  width: 100%;
-  z-index: 1;
+@media screen and (min-width: 1025px) {
+  nav {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding-left: 50px;
+    padding-right: 50px;
+    margin-top: 38px;
+    background-color: transparent;
+    position: fixed;
+    top: 0;
+    width: 100%;
+    z-index: 1;
+  }
+  .siteLogo {
+    width: 240px;
+    height: 55px;
+  }
+  nav a {
+    margin-left: 55px;
+    font-family: "Caveat";
+    font-size: 25px;
+    text-decoration: none;
+    color: #000;
+  }
+  nav a:hover {
+    text-decoration: underline;
+    text-underline-offset: 8px;
+  }
+  .login {
+    background-color: #ffd972;
+    padding: 10px 45px 10px 45px;
+    border-radius: 26px;
+    box-shadow: 0px 10px 6px rgba(0, 0, 0, 0.2);
+  }
+  .mobileMenuIcon {
+    display: none;
+  }
 }
-
-.siteLogo {
-  width: 240px;
-  height: 55px;
+@media screen and (max-width: 1024px) {
+  nav {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding-left: 50px;
+    padding-right: 50px;
+    margin-top: 38px;
+    background-color: transparent;
+    position: fixed;
+    top: 0;
+    width: 100%;
+    z-index: 1;
+  }
+  .siteLogo {
+    width: 240px;
+    height: 55px;
+  }
+  nav a {
+    margin-left: 55px;
+    font-family: "Caveat";
+    font-size: 25px;
+    text-decoration: none;
+    color: #000;
+  }
+  nav a:hover {
+    text-decoration: underline;
+    text-underline-offset: 8px;
+  }
+  .login {
+    background-color: #ffd972;
+    padding: 10px 45px 10px 45px;
+    border-radius: 26px;
+    box-shadow: 0px 10px 6px rgba(0, 0, 0, 0.2);
+  }
+  .navLinks {
+    display: none;
+  }
+  .mobileMenuIcon {
+    width: 31.33px;
+  }
 }
-
-nav a {
-  margin-left: 55px;
-  font-family: "Caveat";
-  font-size: 25px;
-  text-decoration: none;
-  color: #000;
-}
-
-nav a:hover {
-  text-decoration: underline;
-  text-underline-offset: 8px;
-}
-
-.login {
-  background-color: #ffd972;
-  padding: 10px 45px 10px 45px;
-  border-radius: 26px;
-  box-shadow: 0px 10px 6px rgba(0, 0, 0, 0.2);
-}
-
-footer {
-  display: flex;
-  justify-content: space-between;
-  position: relative;
-  width: 100%;
-  bottom: 40px;
-}
-
-.copy {
-  margin-left: 40px;
-}
-
-.footerIcon {
-  width: 19px;
-  height: 19px;
-  margin-right: 40px;
-}
-
-footer p {
-  font-family: "LatoI";
-  font-size: 15px;
-  margin-right: 20px;
-  color: black;
-  text-decoration: none;
-}
-
-.footLinks {
-  display: flex;
-  align-items: center;
-  justify-content: space-evenly;
-  margin-left: -130px;
-}
-
-@media screen and (max-width: 970px) {
+@media screen and (min-width: 1025px) {
+  footer {
+    display: flex;
+    justify-content: space-between;
+    position: relative;
+    width: 100%;
+    bottom: 40px;
+  }
+  .copy {
+    margin-left: 40px;
+  }
+  .footerIcon {
+    width: 19px;
+    height: 19px;
+    margin-right: 40px;
+    opacity: 0.6;
+  }
   footer p {
+    font-family: "LatoI";
+    font-size: 15px;
+    margin-right: 20px;
+    color: #393939;
+    text-decoration: none;
+  }
+  .footLinks a {
+    text-decoration: none;
+  }
+  .footLinks {
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+    margin-left: -130px;
+  }
+}
+@media screen and (max-width: 1024px) {
+  footer {
+    display: flex;
+    justify-content: space-between;
+    position: relative;
+    width: 100%;
+    bottom: 40px;
+  }
+  .copy {
+    margin-left: 20px;
+  }
+  .footerIcon {
+    width: 19px;
+    height: 19px;
+    margin-right: 20px;
+    opacity: 0.6;
+  }
+  .socialIcons {
+    display: flex;
+  }
+  footer p {
+    font-family: "LatoI";
     font-size: 10px;
+    margin-right: 20px;
+    color: #393939;
+    text-decoration: none;
+  }
+  .footLinks a {
+    text-decoration: none;
+  }
+  .footLinks {
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+  }
+}
+@media screen and (max-width: 599px) {
+  footer {
+    display: flex;
+    justify-content: space-evenly;
+    position: relative;
+    width: 100%;
+    bottom: 60px;
+  }
+  .copy {
+    white-space: nowrap;
+    padding-left: 100px;
+    min-width: 100px;
+    margin-top: -30px;
+  }
+  .socialIcons {
+    display: flex;
+    margin-top: -30px;
+    padding-right: 100px;
+  }
+  .footerIcon {
+    width: 19px;
+    height: 19px;
+    opacity: 0.6;
+  }
+  footer p {
+    font-family: "LatoI";
+    font-size: 10px;
+    margin-right: 20px;
+    color: #393939;
+    text-decoration: none;
+  }
+  .footLinks a {
+    text-decoration: none;
+  }
+  .footLinks {
+    min-width: 260px;
+    display: flex;
+    flex-wrap: wrap;
+    margin-left: 50px;
   }
 }
 @media screen and (min-width: 1025px) {
@@ -449,7 +564,6 @@ footer p {
   position: relative;
   bottom: 150px;
   right: 100px;
-  z-index: -1;
 }
 
 .c2text {
@@ -995,6 +1109,100 @@ input {
     justify-content: center;
     height: 857px;
   }
+}
+.yourRecipe {
+  background-image: linear-gradient(rgba(167, 232, 189, 0.5), rgba(167, 232, 189, 0.5)), url(../assets/images/recipe-hero.jpg);
+  min-height: 1000px;
+  width: 100%;
+  background-size: cover;
+  background-repeat: no-repeat;
+  padding-left: 107px;
+  padding-top: 137px;
+}
+
+.yrRecipeContainer .viewRecBtn {
+  position: absolute;
+  margin-left: 90px;
+  margin-top: 110px;
+}
+
+.yourRecipe button {
+  width: 127px;
+  height: 42px;
+  background-color: #FFD972;
+  border-style: none;
+  border-radius: 26px;
+  font-family: "Caveat";
+  font-size: 17px;
+  box-shadow: 0px 10px 6px rgba(0, 0, 0, 0.2);
+}
+
+.yrRecipeHead h1 {
+  font-size: 25px;
+  font-family: CaveatB;
+  margin-top: 80px;
+  margin-bottom: 50px;
+}
+
+.yrRecipeContainer {
+  display: flex;
+}
+.yrRecipeContainer .recImg {
+  width: 300px;
+  height: 263px;
+  object-fit: cover;
+  border-radius: 24px;
+}
+.yrRecipeContainer .yrRecDesc {
+  width: 224px;
+  height: 263px;
+  background-color: #fff;
+  border-radius: 24px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+}
+
+.time {
+  display: flex;
+  align-items: center;
+  justify-content: space-evenly;
+}
+
+.time img {
+  height: 24.46px;
+  width: 87px;
+}
+
+.servings {
+  display: flex;
+  align-items: center;
+  justify-content: space-evenly;
+}
+.servings img {
+  height: 24.46px;
+  width: 87px;
+}
+
+.yrRecDesc h2 {
+  font-size: 15px;
+  font-family: LatoB;
+  text-decoration-line: underline;
+  text-decoration-thickness: 3px;
+}
+.yrRecDesc p {
+  font-size: 9px;
+  font-family: Lato;
+  width: 138px;
+}
+
+.changesBtns {
+  width: 300px;
+  display: flex;
+  align-items: center;
+  justify-content: space-evenly;
+  margin-top: 15px;
 }
 
 /*# sourceMappingURL=styles.css.map */
