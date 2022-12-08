@@ -16,8 +16,19 @@
         <a href="#createYourRecipe">Create Recipe</a>
         <a class="login" href="#login">Login</a>
       </div>
-      <img src="assets/icons/hamburger.png" alt="Hamburger Icon" class="mobileMenuIcon">
+      <a id="mobileNav" class="mobileMenuIcon" onclick="mobileMenu()"  href="javascript:void(0)"><img src="assets/icons/hamburger.png" class="mobileMenuIcon" alt="Hamburger Icon"></a>
     </nav>
+
+    <section id="mobileLinks" class="mobileNav">
+      <div class="mobileLinks">
+        <a  onclick="mobileMenu()" href="index.html"><p>Home</p></a>
+        <a  onclick="mobileMenu()" href="#recipes"><p>Browse</p></a>
+        <a  onclick="mobileMenu()" href="#createYourRecipe"><p>Create Recipe</p></a>
+        <a   onclick="mobileMenu()" href="#login"><p>Login</p></a>
+      </div>
+      <a href="javascript:void(0)"><img class="closeIcon" src="assets/icons/211652_close_icon.png" onclick="mobileMenu()"  alt="Close Window"></a>
+    
+  </section>
 
     <!-- PAGE INJECTION -->
     <div id="app"></div>
@@ -41,5 +52,6 @@
     <script src="lib/jquery-3.6.1.min.js"></script>
     <script src="app/model.js" type="module"></script>
     <script src="app/app.js" type="module"></script>
+    <script src="app/recipes.js"></script>
   </body>
 </html>
