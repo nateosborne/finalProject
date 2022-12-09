@@ -7,6 +7,8 @@ function changeRoute() {
   MODEL.changePage(pageID, initSubmitListener);
 }
 
+
+
 function initURLListener() {
   $(window).on("hashchange", changeRoute);
   changeRoute();
@@ -61,6 +63,11 @@ function initSubmitListener() {
   });
 }
 
+
+
+
+
 $(document).ready(function () {
   initURLListener();
+  populateRecipes();
 });

@@ -1120,7 +1120,18 @@ input {
   padding-top: 137px;
 }
 
-.yrRecipeContainer .viewRecBtn {
+.yrRecipesContainer {
+  display: flex;
+  flex-wrap: wrap;
+  margin-bottom: 147px;
+}
+
+.yrRecCardContent {
+  margin-left: 50px;
+  margin-bottom: 50px;
+}
+
+.yrRecipeCard .viewRecBtn {
   position: absolute;
   margin-left: 90px;
   margin-top: 110px;
@@ -1144,16 +1155,16 @@ input {
   margin-bottom: 50px;
 }
 
-.yrRecipeContainer {
+.yrRecipeCard {
   display: flex;
 }
-.yrRecipeContainer .recImg {
+.yrRecipeCard .recImg {
   width: 300px;
   height: 263px;
   object-fit: cover;
   border-radius: 24px;
 }
-.yrRecipeContainer .yrRecDesc {
+.yrRecipeCard .yrRecDesc {
   width: 224px;
   height: 263px;
   background-color: #fff;
