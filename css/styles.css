@@ -67,7 +67,7 @@ p {
     width: 240px;
     height: 55px;
   }
-  nav a {
+  .navLinks a {
     margin-left: 55px;
     font-family: "Caveat";
     font-size: 25px;
@@ -510,76 +510,222 @@ p {
     margin-top: 44px;
   }
 }
-.homepage {
-  background-image: linear-gradient(rgba(242, 92, 84, 0.5), rgba(242, 92, 84, 0.5)), url(../assets/images/hero.jpg);
-  height: 800px;
-  width: 100%;
-  background-size: cover;
-  background-repeat: no-repeat;
-  position: relative;
-  display: flex;
-  justify-content: center;
-  align-items: center;
+@media screen and (min-width: 1025px) {
+  .homepage {
+    background-image: linear-gradient(rgba(242, 92, 84, 0.7), rgba(242, 92, 84, 0.7)), url(../assets/images/hero.jpg);
+    height: 800px;
+    width: 100%;
+    background-size: cover;
+    background-repeat: no-repeat;
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  .circle1 {
+    height: 357px;
+    width: 357px;
+    border-radius: 100%;
+    background-color: #ffd972;
+    box-shadow: 0px 10px 6px rgba(0, 0, 0, 0.2);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    z-index: 2;
+  }
+  .c1text {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    flex-direction: column;
+  }
+  .c1text-head {
+    font-family: CaveatB;
+    font-size: 24px;
+    letter-spacing: 0.1em;
+  }
+  .c1text-desc {
+    font-family: Lato;
+    font-size: 13px;
+    width: 164px;
+    letter-spacing: 0.1em;
+  }
+  .circle2 {
+    height: 167px;
+    width: 167px;
+    background-color: #fcbcb8;
+    box-shadow: 0px 10px 6px rgba(0, 0, 0, 0.2);
+    border-radius: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+    bottom: 150px;
+    right: 100px;
+  }
+  .c2text {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    flex-direction: column;
+  }
+  .c2text-desc {
+    font-family: Lato;
+    font-size: 10px;
+    width: 105px;
+    letter-spacing: 0.01em;
+    font-style: italic;
+  }
 }
-
-.circle1 {
-  height: 357px;
-  width: 357px;
-  border-radius: 100%;
-  background-color: #ffd972;
-  box-shadow: 0px 10px 6px rgba(0, 0, 0, 0.2);
-  display: flex;
-  justify-content: center;
-  align-items: center;
+@media screen and (max-width: 1024px) {
+  .homepage {
+    background-image: linear-gradient(rgba(242, 92, 84, 0.7), rgba(242, 92, 84, 0.7)), url(../assets/images/hero.jpg);
+    height: 1024px;
+    width: 100%;
+    background-size: cover;
+    background-repeat: no-repeat;
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  .circle1 {
+    min-height: 357px;
+    min-width: 357px;
+    border-radius: 100%;
+    background-color: #ffd972;
+    box-shadow: 0px 10px 6px rgba(0, 0, 0, 0.2);
+    margin-left: 100px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    z-index: 2;
+  }
+  .c1text {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    flex-direction: column;
+  }
+  .c1text-head {
+    font-family: CaveatB;
+    font-size: 24px;
+    letter-spacing: 0.1em;
+    margin-bottom: 29px;
+  }
+  .c1text-desc {
+    font-family: Lato;
+    font-size: 13px;
+    width: 164px;
+    letter-spacing: 0.1em;
+  }
+  .circle2 {
+    min-height: 167px;
+    min-width: 167px;
+    background-color: #fcbcb8;
+    box-shadow: 0px 10px 6px rgba(0, 0, 0, 0.2);
+    border-radius: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+    bottom: 190px;
+    right: 170px;
+  }
+  .c2text {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    flex-direction: column;
+  }
+  .c2text-desc {
+    font-family: Lato;
+    font-size: 10px;
+    width: 95px;
+    text-align: justify;
+    justify-content: center;
+    letter-spacing: 0.01em;
+    font-style: italic;
+  }
 }
-
-.c1text {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  text-align: center;
-  flex-direction: column;
+@media screen and (max-width: 699px) {
+  .homepage {
+    background-image: linear-gradient(rgba(242, 92, 84, 0.7), rgba(242, 92, 84, 0.7)), url(../assets/images/hero.jpg);
+    min-height: 700px;
+    width: 100%;
+    background-size: cover;
+    background-repeat: no-repeat;
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  .circle1 {
+    min-height: 257px;
+    min-width: 257px;
+    border-radius: 100%;
+    background-color: #ffd972;
+    box-shadow: 0px 10px 6px rgba(0, 0, 0, 0.2);
+    margin-bottom: 250px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    z-index: 2;
+  }
+  .c1text {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    flex-direction: column;
+  }
+  .c1text-head {
+    margin-top: 82;
+    font-family: CaveatB;
+    font-size: 17px;
+    letter-spacing: 0.1em;
+    margin-bottom: 21px;
+  }
+  .c1text-desc {
+    font-family: Lato;
+    font-size: 9px;
+    width: 112px;
+    letter-spacing: 0.1em;
+  }
+  .circle2 {
+    min-height: 121px;
+    min-width: 121px;
+    background-color: #fcbcb8;
+    box-shadow: 0px 10px 6px rgba(0, 0, 0, 0.2);
+    border-radius: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+    bottom: 265px;
+    right: 120px;
+  }
+  .c2text {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    flex-direction: column;
+  }
+  .c2text-desc {
+    margin-top: 10px;
+    font-family: Lato;
+    font-size: 8px;
+    width: 80px;
+    text-align: center;
+    letter-spacing: 0.01em;
+    font-style: italic;
+  }
 }
-
-.c1text-head {
-  font-family: Caveat;
-  font-size: 24px;
-}
-
-.c1text-desc {
-  font-family: Lato;
-  font-size: 13px;
-  width: 164px;
-}
-
-.circle2 {
-  height: 167px;
-  width: 167px;
-  background-color: #fcbcb8;
-  box-shadow: 0px 10px 6px rgba(0, 0, 0, 0.2);
-  border-radius: 100%;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  position: relative;
-  bottom: 150px;
-  right: 100px;
-}
-
-.c2text {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  text-align: center;
-  flex-direction: column;
-}
-
-.c2text-desc {
-  font-family: Lato;
-  font-size: 10px;
-  width: 105px;
-}
-
 .recipeshome {
   background-image: linear-gradient(rgba(167, 232, 189, 0.5), rgba(167, 232, 189, 0.5)), url(../assets/images/recipe-hero.jpg);
   height: 1000px;
