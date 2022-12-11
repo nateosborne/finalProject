@@ -1110,112 +1110,391 @@ input {
     height: 857px;
   }
 }
-.yourRecipe {
-  background-image: linear-gradient(rgba(167, 232, 189, 0.5), rgba(167, 232, 189, 0.5)), url(../assets/images/recipe-hero.jpg);
-  min-height: 1000px;
-  width: 100%;
-  background-size: cover;
-  background-repeat: no-repeat;
-  padding-left: 107px;
-  padding-top: 137px;
+@media screen and (min-width: 1025px) {
+  .yourRecipe {
+    background-image: linear-gradient(rgba(167, 232, 189, 0.8), rgba(167, 232, 189, 0.8)), url(../assets/images/recipe-hero.jpg);
+    min-height: 1000px;
+    width: 100%;
+    background-size: cover;
+    background-repeat: no-repeat;
+    padding-top: 137px;
+  }
+  .yourRecipe a {
+    text-decoration: none;
+    color: #000;
+  }
+  .yourRecipe h1 {
+    margin-left: 8%;
+  }
+  .yrRecipesContainer {
+    margin-left: 8%;
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    padding-bottom: 147px;
+    width: 85%;
+  }
+  .yrRecCardContent {
+    margin-bottom: 50px;
+  }
+  .yrRecipeCard .viewRecBtn {
+    position: absolute;
+    margin-left: 90px;
+    margin-top: 110px;
+  }
+  .yourRecipe button {
+    width: 127px;
+    height: 42px;
+    background-color: #FFD972;
+    border-style: none;
+    border-radius: 26px;
+    font-family: "Caveat";
+    font-size: 17px;
+    box-shadow: 0px 10px 6px rgba(0, 0, 0, 0.2);
+  }
+  .yrRecipeHead h1 {
+    font-size: 25px;
+    font-family: CaveatB;
+    margin-top: 80px;
+    margin-bottom: 50px;
+  }
+  .yrRecipeCard {
+    display: flex;
+  }
+  .yrRecipeCard .recImg {
+    width: 300px;
+    height: 263px;
+    object-fit: cover;
+    border-radius: 24px;
+  }
+  .yrRecipeCard .yrRecDesc {
+    width: 224px;
+    height: 263px;
+    background-color: #fff;
+    border-radius: 24px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+  }
+  .time {
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+    width: 83px;
+    height: 24px;
+    margin-bottom: 17px;
+  }
+  .time p {
+    display: flex;
+    align-items: flex-end;
+    justify-content: flex-end;
+    height: 24px;
+  }
+  .time img {
+    height: 24.46px;
+    width: 87px;
+  }
+  .servings {
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+    width: 83px;
+    height: 24px;
+  }
+  .servings p {
+    display: flex;
+    align-items: flex-end;
+    justify-content: flex-end;
+    height: 24px;
+  }
+  .servings img {
+    height: 24.46px;
+    width: 87px;
+  }
+  .yrRecDesc h2 {
+    font-size: 15px;
+    font-family: LatoB;
+    /* text-decoration-line: underline;
+    text-decoration-thickness: 3px; */
+    border-bottom: 3px solid;
+    letter-spacing: 0.1rem;
+    padding-bottom: 3px;
+  }
+  .yrRecDesc p {
+    font-size: 9px;
+    font-family: Lato;
+    width: 138px;
+  }
+  .yrRecDesc a {
+    text-decoration: none;
+    color: #000;
+  }
+  .changesBtns {
+    width: 300px;
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+    margin-top: 15px;
+  }
 }
-
-.yrRecipesContainer {
-  display: flex;
-  flex-wrap: wrap;
-  margin-bottom: 147px;
+@media screen and (max-width: 1024px) {
+  .yourRecipe {
+    background-image: linear-gradient(rgba(167, 232, 189, 0.8), rgba(167, 232, 189, 0.8)), url(../assets/images/recipe-hero.jpg);
+    min-height: 1000px;
+    width: 100%;
+    background-size: cover;
+    background-repeat: no-repeat;
+    padding-top: 137px;
+  }
+  .yourRecipe a {
+    text-decoration: none;
+    color: #000;
+  }
+  .yourRecipe h1 {
+    margin-left: 14%;
+  }
+  .yrRecipesContainer {
+    margin-left: 14%;
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    padding-bottom: 147px;
+    width: 526px;
+  }
+  .yrRecCardContent {
+    margin-bottom: 50px;
+  }
+  .yrRecipeCard .viewRecBtn {
+    position: absolute;
+    margin-left: 90px;
+    margin-top: 110px;
+  }
+  .yourRecipe button {
+    width: 127px;
+    height: 42px;
+    background-color: #FFD972;
+    border-style: none;
+    border-radius: 26px;
+    font-family: "Caveat";
+    font-size: 17px;
+    box-shadow: 0px 10px 6px rgba(0, 0, 0, 0.2);
+  }
+  .yrRecipeHead h1 {
+    font-size: 25px;
+    font-family: CaveatB;
+    margin-top: 80px;
+    margin-bottom: 50px;
+  }
+  .yrRecipeCard {
+    display: flex;
+  }
+  .yrRecipeCard .recImg {
+    width: 300px;
+    height: 263px;
+    object-fit: cover;
+    border-radius: 24px;
+  }
+  .yrRecipeCard .yrRecDesc {
+    width: 224px;
+    height: 263px;
+    background-color: #fff;
+    border-radius: 24px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+  }
+  .time {
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+    width: 83px;
+    height: 24px;
+    margin-bottom: 17px;
+  }
+  .time p {
+    display: flex;
+    align-items: flex-end;
+    justify-content: flex-end;
+    height: 24px;
+  }
+  .time img {
+    height: 24.46px;
+    width: 87px;
+  }
+  .servings {
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+    width: 83px;
+    height: 24px;
+  }
+  .servings p {
+    display: flex;
+    align-items: flex-end;
+    justify-content: flex-end;
+    height: 24px;
+  }
+  .servings img {
+    height: 24.46px;
+    width: 87px;
+  }
+  .yrRecDesc h2 {
+    font-size: 15px;
+    font-family: LatoB;
+    /* text-decoration-line: underline;
+    text-decoration-thickness: 3px; */
+    border-bottom: 3px solid;
+    letter-spacing: 0.1rem;
+    padding-bottom: 3px;
+  }
+  .yrRecDesc p {
+    font-size: 9px;
+    font-family: Lato;
+    width: 138px;
+  }
+  .yrRecDesc a {
+    text-decoration: none;
+    color: #000;
+  }
+  .changesBtns {
+    width: 300px;
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+    margin-top: 15px;
+  }
 }
-
-.yrRecCardContent {
-  margin-left: 50px;
-  margin-bottom: 50px;
+@media screen and (max-width: 615px) {
+  .yourRecipe {
+    background-image: linear-gradient(rgba(167, 232, 189, 0.8), rgba(167, 232, 189, 0.8)), url(../assets/images/recipe-hero.jpg);
+    min-height: 1000px;
+    width: 100%;
+    background-size: cover;
+    background-repeat: no-repeat;
+    padding-top: 43px;
+  }
+  .yourRecipe a {
+    text-decoration: none;
+    color: #000;
+  }
+  .yourRecipe h1 {
+    margin-left: 10%;
+    font-size: 19px;
+  }
+  .yrRecipesContainer {
+    margin-left: 10%;
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    padding-bottom: 135px;
+    max-width: 320px;
+  }
+  .yrRecCardContent {
+    margin-bottom: 50px;
+  }
+  .yrRecipeCard .viewRecBtn {
+    position: absolute;
+    margin-left: 90px;
+    margin-top: 55px;
+  }
+  .yourRecipe button {
+    width: 127px;
+    height: 42px;
+    background-color: #FFD972;
+    border-style: none;
+    border-radius: 26px;
+    font-family: "Caveat";
+    font-size: 17px;
+    box-shadow: 0px 10px 6px rgba(0, 0, 0, 0.2);
+  }
+  .yrRecipeHead h1 {
+    font-size: 20px;
+    font-family: CaveatB;
+    margin-bottom: 50px;
+  }
+  .yrRecipeCard {
+    display: flex;
+    flex-direction: column;
+  }
+  .yrRecipeCard .recImg {
+    width: 298px;
+    height: 149px;
+    object-fit: cover;
+    border-radius: 24px;
+  }
+  .yrRecipeCard .yrRecDesc {
+    width: 297px;
+    height: 172px;
+    background-color: #fff;
+    border-radius: 24px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+  }
+  .time {
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+    width: 67px;
+    height: 23px;
+    margin-bottom: 15px;
+  }
+  .time p {
+    display: flex;
+    align-items: center;
+    margin-top: 12px;
+  }
+  .time img {
+    height: 22px;
+    width: 22px;
+  }
+  .servings {
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+    width: 67px;
+    height: 23px;
+  }
+  .servings p {
+    display: flex;
+    align-items: center;
+    margin-top: 12px;
+  }
+  .servings img {
+    height: 22px;
+    width: 22px;
+  }
+  .yrRecDesc h2 {
+    margin-top: 5px;
+    font-size: 10px;
+    font-family: LatoB;
+    /* text-decoration-line: underline;
+    text-decoration-thickness: 3px; */
+    border-bottom: 2px solid;
+    letter-spacing: 0.08rem;
+    padding-bottom: 2px;
+  }
+  .yrRecDesc p {
+    font-size: 8px;
+    font-family: Lato;
+    width: 153px;
+    height: 36px;
+  }
+  .yrRecDesc a {
+    text-decoration: none;
+    color: #000;
+  }
+  .changesBtns {
+    width: 300px;
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+    margin-top: 15px;
+  }
 }
-
-.yrRecipeCard .viewRecBtn {
-  position: absolute;
-  margin-left: 90px;
-  margin-top: 110px;
-}
-
-.yourRecipe button {
-  width: 127px;
-  height: 42px;
-  background-color: #FFD972;
-  border-style: none;
-  border-radius: 26px;
-  font-family: "Caveat";
-  font-size: 17px;
-  box-shadow: 0px 10px 6px rgba(0, 0, 0, 0.2);
-}
-
-.yrRecipeHead h1 {
-  font-size: 25px;
-  font-family: CaveatB;
-  margin-top: 80px;
-  margin-bottom: 50px;
-}
-
-.yrRecipeCard {
-  display: flex;
-}
-.yrRecipeCard .recImg {
-  width: 300px;
-  height: 263px;
-  object-fit: cover;
-  border-radius: 24px;
-}
-.yrRecipeCard .yrRecDesc {
-  width: 224px;
-  height: 263px;
-  background-color: #fff;
-  border-radius: 24px;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  flex-direction: column;
-}
-
-.time {
-  display: flex;
-  align-items: center;
-  justify-content: space-evenly;
-}
-
-.time img {
-  height: 24.46px;
-  width: 87px;
-}
-
-.servings {
-  display: flex;
-  align-items: center;
-  justify-content: space-evenly;
-}
-.servings img {
-  height: 24.46px;
-  width: 87px;
-}
-
-.yrRecDesc h2 {
-  font-size: 15px;
-  font-family: LatoB;
-  text-decoration-line: underline;
-  text-decoration-thickness: 3px;
-}
-.yrRecDesc p {
-  font-size: 9px;
-  font-family: Lato;
-  width: 138px;
-}
-
-.changesBtns {
-  width: 300px;
-  display: flex;
-  align-items: center;
-  justify-content: space-evenly;
-  margin-top: 15px;
-}
-
 .mobileNav {
   width: 100%;
   height: 200px;
