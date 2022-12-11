@@ -1,3 +1,4 @@
+
 @media screen and (min-width: 1025px){
     .createYourRecipe {
         display: flex;
@@ -16,6 +17,7 @@
             font-family: "Lato";
             letter-spacing: .1em;
             margin-bottom: 36px;
+            font-weight: normal;
         }
         input {
             height: 36px;
@@ -39,7 +41,7 @@
            border-radius: 26px;
            font-family: "Caveat";
            font-size: 17px;
-           margin-bottom: 109px;
+           margin-bottom: 150px;
            box-shadow: 0px 10px 6px rgba(0, 0, 0, 0.2);
         }
     }
@@ -120,6 +122,7 @@
             font-family: "Lato";
             letter-spacing: .1em;
             margin-bottom: 36px;
+            font-weight: normal;
         }
         input {
             height: 28px;
@@ -143,7 +146,7 @@
            border-radius: 26px;
            font-family: "Caveat";
            font-size: 17px;
-           margin-bottom: 109px;
+           margin-bottom: 193px;
            box-shadow: 0px 10px 6px rgba(0, 0, 0, 0.2);
         }
     }
@@ -209,7 +212,7 @@
         //justify-content: space-evenly;
         flex-direction: column;
         .cyrDesc h1 {
-            margin-top: 98.2px;
+            margin-top: 150px;
             font-family: "Caveat";
             font-size: 20px; //
             font-weight: normal;
@@ -221,6 +224,7 @@
             font-family: "Lato";
             letter-spacing: .1em;
             margin-bottom: 47px;
+            font-weight: normal;
         }
         input {
             height: 23px;
@@ -244,7 +248,7 @@
            border-radius: 26px;
            font-family: "Caveat";
            font-size: 20px;
-           margin-bottom: 90px;
+           margin-bottom: 160px;
            box-shadow: 0px 10px 6px rgba(0, 0, 0, 0.2);
         }
     }

@@ -93,8 +93,8 @@ p {
     display: flex;
     align-items: center;
     justify-content: space-between;
-    padding-left: 50px;
-    padding-right: 50px;
+    padding-left: 37px;
+    padding-right: 37px;
     margin-top: 38px;
     background-color: transparent;
     position: fixed;
@@ -103,16 +103,16 @@ p {
     z-index: 1;
   }
   .siteLogo {
-    width: 240px;
-    height: 55px;
+    width: 136px;
+    height: 47px;
   }
-  nav a {
-    margin-left: 55px;
-    font-family: "Caveat";
-    font-size: 25px;
-    text-decoration: none;
-    color: #000;
-  }
+  /*   nav a {
+      margin-left: 55px;
+      font-family: "Caveat";
+      font-size: 25px;
+      text-decoration: none;
+      color: #000;
+    } */
   nav a:hover {
     text-decoration: underline;
     text-underline-offset: 8px;
@@ -205,19 +205,21 @@ p {
     display: flex;
     justify-content: space-evenly;
     position: relative;
-    width: 100%;
+    width: 300px;
     bottom: 60px;
   }
   .copy {
     white-space: nowrap;
-    padding-left: 100px;
-    min-width: 100px;
+    position: absolute;
+    left: 0;
     margin-top: -30px;
   }
   .socialIcons {
+    position: absolute;
+    right: -60px;
     display: flex;
     margin-top: -30px;
-    padding-right: 100px;
+    max-height: 20px;
   }
   .footerIcon {
     width: 19px;
@@ -235,10 +237,13 @@ p {
     text-decoration: none;
   }
   .footLinks {
-    min-width: 260px;
+    min-width: 100%;
+    position: absolute;
+    left: 50px;
     display: flex;
+    align-items: center;
+    justify-content: center;
     flex-wrap: wrap;
-    margin-left: 50px;
   }
 }
 @media screen and (min-width: 1025px) {
@@ -315,7 +320,7 @@ p {
   .instructions {
     width: 1055px;
     margin-top: 60px;
-    margin-bottom: 93px;
+    margin-bottom: 120px;
   }
   .instructions button {
     width: 128px;
@@ -326,6 +331,10 @@ p {
     border-style: none;
     border-radius: 26px;
     margin-top: 60px;
+  }
+  .instructions a {
+    text-decoration: none;
+    color: #000;
   }
 }
 @media screen and (max-width: 1024px) {
@@ -416,6 +425,10 @@ p {
     border-radius: 26px;
     margin-top: 60px;
   }
+  .instructions a {
+    text-decoration: none;
+    color: #000;
+  }
 }
 @media screen and (max-width: 599px) {
   .recipeDesc {
@@ -498,7 +511,7 @@ p {
   .instructions {
     width: 322px;
     margin-top: 44px;
-    margin-bottom: 95px;
+    margin-bottom: 160px;
   }
   .instructions button {
     width: 128px;
@@ -508,6 +521,10 @@ p {
     border-style: none;
     border-radius: 26px;
     margin-top: 44px;
+  }
+  .instructions a {
+    text-decoration: none;
+    color: #000;
   }
 }
 @media screen and (min-width: 1025px) {
@@ -652,7 +669,7 @@ p {
     font-style: italic;
   }
 }
-@media screen and (max-width: 699px) {
+@media screen and (max-width: 599px) {
   .homepage {
     background-image: linear-gradient(rgba(242, 92, 84, 0.7), rgba(242, 92, 84, 0.7)), url(../assets/images/hero.jpg);
     min-height: 700px;
@@ -924,6 +941,7 @@ p {
     font-family: "Lato";
     letter-spacing: 0.1em;
     margin-bottom: 36px;
+    font-weight: normal;
   }
   .createYourRecipe input {
     height: 36px;
@@ -946,7 +964,7 @@ p {
     border-radius: 26px;
     font-family: "Caveat";
     font-size: 17px;
-    margin-bottom: 109px;
+    margin-bottom: 150px;
     box-shadow: 0px 10px 6px rgba(0, 0, 0, 0.2);
   }
   .cyrDesc {
@@ -1013,6 +1031,7 @@ p {
     font-family: "Lato";
     letter-spacing: 0.1em;
     margin-bottom: 36px;
+    font-weight: normal;
   }
   .createYourRecipe input {
     height: 28px;
@@ -1035,7 +1054,7 @@ p {
     border-radius: 26px;
     font-family: "Caveat";
     font-size: 17px;
-    margin-bottom: 109px;
+    margin-bottom: 193px;
     box-shadow: 0px 10px 6px rgba(0, 0, 0, 0.2);
   }
   .cyrDesc {
@@ -1090,7 +1109,7 @@ p {
     flex-direction: column;
   }
   .createYourRecipe .cyrDesc h1 {
-    margin-top: 98.2px;
+    margin-top: 150px;
     font-family: "Caveat";
     font-size: 20px;
     font-weight: normal;
@@ -1102,6 +1121,7 @@ p {
     font-family: "Lato";
     letter-spacing: 0.1em;
     margin-bottom: 47px;
+    font-weight: normal;
   }
   .createYourRecipe input {
     height: 23px;
@@ -1124,7 +1144,7 @@ p {
     border-radius: 26px;
     font-family: "Caveat";
     font-size: 20px;
-    margin-bottom: 90px;
+    margin-bottom: 160px;
     box-shadow: 0px 10px 6px rgba(0, 0, 0, 0.2);
   }
   .cyrDesc {

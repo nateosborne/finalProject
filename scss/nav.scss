@@ -51,8 +51,8 @@
     display: flex;
     align-items: center;
     justify-content: space-between;
-    padding-left: 50px;
-    padding-right: 50px;
+    padding-left: 37px;
+    padding-right: 37px;
     margin-top: 38px;
     background-color: transparent;
     position: fixed;
@@ -62,17 +62,17 @@
   }
   
   .siteLogo {
-    width: 240px;
-    height: 55px;
+    width: 136px;
+    height: 47px;
   }
   
-  nav a {
+/*   nav a {
     margin-left: 55px;
     font-family: "Caveat";
     font-size: 25px;
     text-decoration: none;
     color: #000;
-  }
+  } */
   
   nav a:hover {
     text-decoration: underline;

@@ -98,27 +98,33 @@
 @media screen and (max-width: 599px) {
   footer {
     display: flex;
-    justify-content: space-evenly;
+    justify-content:space-evenly;
     position: relative;
-    width: 100%;
+    width: 300px;
     bottom: 60px;
     //flex-wrap: wrap;
-    //background-color: chartreuse;
+    //background-color: rgb(147, 147, 194);
     
   }
   
   .copy {
     white-space: nowrap;
-    padding-left: 100px;
-    min-width: 100px;
+    //max-height: 12px;
+    position: absolute;
+    left: 0;
     margin-top: -30px;
+    //background-color: yellow;
   }
   
   .socialIcons {
-    //min-width: 71px;
+    position: absolute;
+    right: -60px;
     display: flex;
     margin-top: -30px;
-    padding-right: 100px;
+    //padding-right: 100px;
+    max-height: 20px;
+    //background-color: red;
+    
   }
 
   .footerIcon {
@@ -142,11 +148,16 @@
   }
   
   .footLinks {
-    //background-color: chartreuse;
-    min-width: 260px;
+  
+    min-width: 100%;
+    position: absolute;
+    left: 50px;
     display: flex;
+    align-items: center;
+    justify-content: center;
+    
     flex-wrap: wrap;
-    margin-left: 50px;
+    //margin-left: 50px;
     
     
     

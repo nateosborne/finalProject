@@ -93,7 +93,7 @@
     .instructions {
         width: 1055px;
         margin-top: 60px;
-        margin-bottom: 93px;
+        margin-bottom: 120px;
     
         button {
             width: 128px;
@@ -104,6 +104,11 @@
             border-style: none;
             border-radius: 26px;
             margin-top: 60px;
+        }
+
+        a {
+            text-decoration: none;
+            color: #000;
         }
     }
 }
@@ -223,6 +228,11 @@
             border-radius: 26px;
             margin-top: 60px;
         }
+
+        a {
+            text-decoration: none;
+            color: #000;
+        }
     }
 }
 
@@ -337,7 +347,7 @@
     .instructions {
         width: 322px;
         margin-top: 44px;
-        margin-bottom: 95px;
+        margin-bottom: 160px;
     
         button {
             width: 128px;
@@ -347,6 +357,14 @@
             border-style: none;
             border-radius: 26px;
             margin-top: 44px;
+            
+        }
+
+         a {
+            text-decoration: none;
+            color: #000;
         }
     }
 } 
+
+
