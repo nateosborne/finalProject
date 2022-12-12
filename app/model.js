@@ -1,5 +1,3 @@
-
-
 var userInfo = {};
 
 //
@@ -21,12 +19,11 @@ export function changePage(pageID, callback) {
       console.log("TESTING");
       populateRecipes();
     });
-  }
-  else {
+  } else {
     //login only works when "home.html" is "login.html"
     $.get(`pages/${pageID}.html`, function (data) {
       $("#app").html(data);
-      //callback();
+      callback();
     });
   }
 }

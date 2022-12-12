@@ -14,36 +14,15 @@ function changeRoute() {
   if (pageID == "") {
     if (pageID == "") {
       MODEL.changePage("home");
-    } 
-    else {
+    } else {
       MODEL.changePage(pageID);
     }
   }
 }
 
-
 function initSubmitListener() {
-  var userObj = {};
-  $("#loginbutton").on("click", function (e) {
-    console.log("submit");
-    let em = $("#email").val();
-    let pw = $("#pw").val();
-    // console.log(`${em}${pw}`);
-    if (em == "") {
-      alert("Please enter your Email");
-    } else if (pw == "") {
-      alert("Please enter your Password");
-    } else {
-      alert("You have logged in!");
-    }
-
-    if (em == userObj[2] && pw == userObj[3]) {
-      alert("You have logged in!");
-      console.log("login");
-    }
-  });
   $("#signupbutton").on("click", function (e) {
-    console.log("submit");
+    // console.log("submit");
     let fn = $("#fn").val();
     let ln = $("#ln").val();
     let em = $("#email2").val();
@@ -67,13 +46,33 @@ function initSubmitListener() {
       alert("You have signed up!");
 
       MODEL.setUserInfo(userObj);
+
+      $("#loginbutton").on("click", function (e) {
+        // console.log("submit");
+        let em2 = $("#email").val();
+        let pw2 = $("#pw").val();
+        // console.log(`${em}${pw}`);
+        if (em2 == "") {
+          alert("Please enter your Email");
+        } else if (pw2 == "") {
+          alert("Please enter your Password");
+        }
+        // else {
+        //   alert("You have logged in!");
+        // }
+
+        if (em2 == em && pw2 == pw) {
+          alert("You have logged in!");
+          // console.log("login");
+        } else if (em2 != em && em2 != "") {
+          alert("We could not find that email");
+        } else if (em2 == em && pw2 != pw && pw != "") {
+          alert("Your password is not correct");
+        }
+      });
     }
   });
 }
-
-
-
-
 
 $(document).ready(function () {
   initURLListener();
