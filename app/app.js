@@ -1,18 +1,26 @@
 import * as MODEL from "./model.js";
 
+function initURLListener() {
+  $(window).on("hashchange", changeRoute);
+  changeRoute();
+}
+
 function changeRoute() {
   let hashTag = window.location.hash;
   let pageID = hashTag.replace("#", "");
   //   console.log(hashTag + ' ' + pageID);
   MODEL.changePage(pageID, initSubmitListener);
+
+  if (pageID == "") {
+    if (pageID == "") {
+      MODEL.changePage("home");
+    } 
+    else {
+      MODEL.changePage(pageID);
+    }
+  }
 }
 
-
-
-function initURLListener() {
-  $(window).on("hashchange", changeRoute);
-  changeRoute();
-}
 
 function initSubmitListener() {
   var userObj = {};

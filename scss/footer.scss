@@ -100,7 +100,7 @@
     display: flex;
     justify-content:space-evenly;
     position: relative;
-    width: 300px;
+    min-width: 300px;
     bottom: 60px;
     //flex-wrap: wrap;
     //background-color: rgb(147, 147, 194);
@@ -118,7 +118,7 @@
   
   .socialIcons {
     position: absolute;
-    right: -60px;
+    right: 0;
     display: flex;
     margin-top: -30px;
     //padding-right: 100px;
@@ -149,9 +149,11 @@
   
   .footLinks {
   
-    min-width: 100%;
+    max-width: 350px;
     position: absolute;
-    left: 50px;
+    left: 30px;
+    //max-height: 200px;
+    padding-left: 20px;
     display: flex;
     align-items: center;
     justify-content: center;

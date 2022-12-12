@@ -114,31 +114,29 @@ var obj = {
 function populateRecipes(){
   $.each(obj.Recipes, (idx, recipe) => {
     $(".yrRecipesContainer").append(
-      `<div class="yrRecCardContent">
+      ` <div class="yrRecCardContent">
       <div class="yrRecipeCard">
-          <img class="recImg" src="../assets/images//${recipe.image}" alt="your recipe image">
-          <button class="viewRecBtn">View</button>
+          <img class="recImg" src="../assets/images/${recipe.image}" alt="your recipe image">
+         
           <div class="yrRecDesc">
-              <h2>${recipe.name}</h2>
+              <h2><a href="#viewRecipe">${recipe.name}</a></h2>
               <p>
               ${recipe.description}
               </p>
               <div class="time">
                   <img src="../assets/icons/time.svg" alt="timerIcon"/>
-                  <p>1h 24min</p>
+                  <p>${recipe.time}</p>
               </div>
               <div class="servings">
                   <img src="../assets/icons/servings.svg" alt="servingsIcon"/>
-                  <p>4 Servings</p>
+                  <p>${recipe.servings}</p>
               </div>
           </div>     
       </div>
 
-      <div class="changesBtns">
-          <button class="editBtn">Edit</button>
-          <button class="deleteBtn">Delete</button>
-      </div> 
-  </div>`
+      
+  </div> 
+`
     )
   });
 }
@@ -156,6 +154,3 @@ function populateRecipes(){
         }
 }  
 
-$(document).ready(function () {
-  
-});
