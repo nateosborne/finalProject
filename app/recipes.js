@@ -110,13 +110,13 @@ var obj = {
     },
   ]
 }
-
+recipe-burger.jpg
 function populateRecipes(){
   $.each(obj.Recipes, (idx, recipe) => {
     $(".yrRecipesContainer").append(
       ` <div class="yrRecCardContent">
       <div class="yrRecipeCard">
-          <img class="recImg" src="../assets/images/${recipe.image}" alt="your recipe image">
+          <img class="recImg" src="assets/images/${recipe.image}" alt="your recipe image">
          
           <div class="yrRecDesc">
               <h2><a href="#viewRecipe">${recipe.name}</a></h2>
@@ -124,11 +124,11 @@ function populateRecipes(){
               ${recipe.description}
               </p>
               <div class="time">
-                  <img src="../assets/icons/time.svg" alt="timerIcon"/>
+                  <img src="assets/icons/time.svg" alt="timerIcon"/>
                   <p>${recipe.time}</p>
               </div>
               <div class="servings">
-                  <img src="../assets/icons/servings.svg" alt="servingsIcon"/>
+                  <img src="assets/icons/servings.svg" alt="servingsIcon"/>
                   <p>${recipe.servings}</p>
               </div>
           </div>     
