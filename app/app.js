@@ -29,13 +29,25 @@ function initSubmitListener() {
     let pw = $("#pw2").val();
     // console.log(`${em}${pw}`);
     if (fn == "") {
-      alert("Please enter your First Name");
+      Swal.fire({
+        icon: "error",
+        title: "Please enter your First Name",
+      });
     } else if (ln == "") {
-      alert("Please enter your Last Name");
+      Swal.fire({
+        icon: "error",
+        title: "Please enter your Last Name",
+      });
     } else if (em == "") {
-      alert("Please enter your Email");
+      Swal.fire({
+        icon: "error",
+        title: "Please enter your Email",
+      });
     } else if (pw == "") {
-      alert("Please enter your Password");
+      Swal.fire({
+        icon: "error",
+        title: "Please enter your Password",
+      });
     } else {
       let userObj = {
         firstName: fn,
@@ -43,7 +55,12 @@ function initSubmitListener() {
         email: em,
         password: pw,
       };
-      alert("You have signed up!");
+      Swal.fire({
+        icon: "success",
+        title: "You have signed up!",
+        confirmButtonColor: "#3085d6",
+        confirmButtonText: "OK",
+      });
 
       MODEL.setUserInfo(userObj);
 
@@ -53,21 +70,42 @@ function initSubmitListener() {
         let pw2 = $("#pw").val();
         // console.log(`${em}${pw}`);
         if (em2 == "") {
-          alert("Please enter your Email");
+          Swal.fire({
+            icon: "error",
+            title: "Please enter your Email",
+          });
         } else if (pw2 == "") {
-          alert("Please enter your Password");
+          Swal.fire({
+            icon: "error",
+            title: "Please enter your Password",
+          });
         }
+
         // else {
         //   alert("You have logged in!");
         // }
 
         if (em2 == em && pw2 == pw) {
-          alert("You have logged in!");
+          Swal.fire({
+            icon: "success",
+            title: "You have logged in!",
+            text: " Welcome back " + fn + "!",
+            confirmButtonColor: "#3085d6",
+            confirmButtonText: "OK",
+          });
+
           // console.log("login");
+        }
+        if (pw2 != pw && pw2 != "") {
+          Swal.fire({
+            icon: "error",
+            title: "That password is incorrect",
+          });
         } else if (em2 != em && em2 != "") {
-          alert("We could not find that email");
-        } else if (em2 == em && pw2 != pw && pw != "") {
-          alert("Your password is not correct");
+          Swal.fire({
+            icon: "error",
+            title: "Please enter a valid email",
+          });
         }
       });
     }

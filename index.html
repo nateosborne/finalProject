@@ -9,28 +9,45 @@
   </head>
   <body>
     <nav>
-      
-      <a href="#home"><img class="siteLogo" src="assets/icons/logo.svg" alt="Site Logo" /></a>
+      <a href="#home"
+        ><img class="siteLogo" src="assets/icons/logo.svg" alt="Site Logo"
+      /></a>
       <div class="navLinks">
         <a href="index.html">Home</a>
         <a href="#recipes">Browse</a>
         <a href="#createYourRecipe">Create Recipe</a>
         <a class="login" href="#login">Login</a>
       </div>
-      <a id="mobileNav" class="mobileMenuIcon" onclick="mobileMenu()"  href="javascript:void(0)"><img src="assets/icons/hamburger.png" class="mobileMenuIcon" alt="Hamburger Icon"></a>
+      <a
+        id="mobileNav"
+        class="mobileMenuIcon"
+        onclick="mobileMenu()"
+        href="javascript:void(0)"
+        ><img
+          src="assets/icons/hamburger.png"
+          class="mobileMenuIcon"
+          alt="Hamburger Icon"
+      /></a>
     </nav>
 
     <section id="mobileLinks" class="mobileNav">
       <div class="mobileLinks">
-        <a  onclick="mobileMenu()" href="index.html"><p>Home</p></a>
-        <a  onclick="mobileMenu()" href="#recipes"><p>Browse</p></a>
-        <a  onclick="mobileMenu()" href="#createYourRecipe"><p>Create Recipe</p></a>
-        <a   onclick="mobileMenu()" href="#login"><p>Login</p></a>
+        <a onclick="mobileMenu()" href="index.html"><p>Home</p></a>
+        <a onclick="mobileMenu()" href="#recipes"><p>Browse</p></a>
+        <a onclick="mobileMenu()" href="#createYourRecipe"
+          ><p>Create Recipe</p></a
+        >
+        <a onclick="mobileMenu()" href="#login"><p>Login</p></a>
       </div>
-      <a href="javascript:void(0)"><img class="closeIcon" src="assets/icons/211652_close_icon.png" onclick="mobileMenu()"  alt="Close Window"></a>
-    
-  </section>
-  
+      <a href="javascript:void(0)"
+        ><img
+          class="closeIcon"
+          src="assets/icons/211652_close_icon.png"
+          onclick="mobileMenu()"
+          alt="Close Window"
+      /></a>
+    </section>
+
     <!-- PAGE INJECTION -->
     <div id="app"></div>
 
@@ -44,16 +61,17 @@
         <a href="#yourRecipe"><p>Your Recipes</p></a>
       </div>
       <div class="socialIcons">
-        <a href="javascript:void(0)"><img class="footerIcon" src="assets/icons/facebook.svg" alt="" /></a>
-        <a href="javascript:void(0)"><img class="footerIcon" src="assets/icons/instagram.svg" alt="" /></a>
-        
-        
+        <a href="javascript:void(0)"
+          ><img class="footerIcon" src="assets/icons/facebook.svg" alt=""
+        /></a>
+        <a href="javascript:void(0)"
+          ><img class="footerIcon" src="assets/icons/instagram.svg" alt=""
+        /></a>
       </div>
-      
     </footer>
 
-
     <script src="lib/jquery-3.6.1.min.js"></script>
+    <script src="//cdn.jsdelivr.net/npm/sweetalert2@11"></script>
     <script src="app/model.js" type="module"></script>
     <script src="app/app.js" type="module"></script>
     <script src="app/recipes.js"></script>
