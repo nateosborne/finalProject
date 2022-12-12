@@ -1,7 +1,7 @@
 THE JUNGLE COOK
 A recipe book web application.
 
-The Jungle Book is a stylish app that allows you to browse various recipes in addition to creating and favoriting your and customizing your saved recipes. To get started click the login button on the navigation bar. If you are already a user sign in, otherwise create an account, not interested? Without an account you can still browse and discover a new favorite dish. (Current version lacks a lot of JS functionality).
+The Jungle Book is a stylish app that allows you to browse various recipes in addition to creating and favoriting your own and customizing your saved recipes. To get started click the login button on the navigation bar. If you are already a user sign in, otherwise create an account, not interested? Without an account you can still browse and discover a new favorite dish. (Current version lacks a lot of JS functionality).
 
 Nate oversaw the following pages: Initial document creation, Home (desktop styling), Recipe (desktop styling), alerts/feedback and login (styling and functionality).
 
